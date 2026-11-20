@@ -14,13 +14,16 @@
   <link rel="canonical" href="https://kiboiko.github.io/stepan-belykh/">
   <link rel="icon" href="favicon.png">
   <link rel="preload" href="fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/motion/motion.css">
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="assets/moments/moments.js"></script>
+  <script>document.documentElement.classList.add('m-enter'); setTimeout(() => document.documentElement.classList.add('m-enter-done'), 700);</script>
   <title>Степан Белых — портфолио</title>
 </head>
 <body>
   <!-- Service portfolio. Word hero, card-pastels, Hanken Grotesk with Manrope Cyrillic, type highlight. -->
-  <a class="skip" href="#main">К содержанию</a>
-  <header class="header">
+  <header class="header nav">
+    <a class="skip" href="#main">К содержанию</a>
     <div class="wrap header-inner">
       <a class="mark" href="#main" aria-label="Степан Белых, начало страницы">СБ<span>.</span></a>
       <nav aria-label="Разделы портфолио">
@@ -32,14 +35,14 @@
   </header>
   <main id="main">
     <section class="hero" aria-labelledby="name" data-enter style="--h: 1">
-      <div class="wrap">
+      <div class="wrap hero-content">
         <div class="hero-title">
           <p class="eyebrow"><span aria-hidden="true"></span> Открыт к стажировке</p>
           <h1 id="name">Степан <strong>Белых<span>.</span></strong></h1>
         </div>
         <div class="hero-bottom">
           <div class="intro">
-            <h2>Продуктовая аналитика<br>и разработка</h2>
+            <p class="role">Продуктовая аналитика<br>и разработка</p>
             <p>Учусь в ЮФУ и разрабатываю сервисы для бизнеса. Хочу применять опыт работы с продуктами к метрикам, экспериментам и решениям на данных.</p>
             <div class="actions">
               <a class="button primary" href="#projects">Смотреть проекты</a>
@@ -110,15 +113,15 @@
         </div>
         <div class="close" data-moment="word-highlight">
           <div>
-            <h3>Обсудим <mark>стажировку?</mark></h3>
-            <p>Могу совмещать стажировку с учёбой и уделять ей до 30 часов в неделю.</p>
+            <h3>Обсудим <strong>стажировку?</strong></h3>
+            <p class="mo-wh__text">Могу совмещать стажировку с учёбой и уделять ей до 30 часов в неделю.</p>
           </div>
           <a class="button primary" href="https://t.me/bestdmit">Написать @bestdmit</a>
         </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="closing">
     <div class="wrap footer-inner">
       <span>Степан Белых</span>
       <a href="#main">К началу страницы ↑</a>
